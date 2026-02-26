@@ -1,0 +1,110 @@
+/* ===== Main Container ===== */
+.countries-block {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+/* ===== Dropdown ===== */
+.continent-dropdown {
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+  background: #f8f9ff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.continent-dropdown:hover {
+  border-color: #6a5cff;
+}
+
+/* ===== Table Base ===== */
+.countries-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+}
+
+.countries-table th,
+.countries-table td {
+  padding: 14px 16px;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.countries-table td {
+  border-bottom: 1px solid #eee;
+}
+
+.countries-table tr:hover td {
+  background: rgba(0,0,0,0.03);
+  transform: scale(1.01);
+}
+
+/* ===================================== */
+/* ====== DIFFERENT STYLES PER SHEET ==== */
+/* ===================================== */
+
+/* 🌍 ALL */
+.sheet-all th {
+  background: linear-gradient(135deg, #6a5cff, #a66cff);
+  color: white;
+}
+
+/* 🌏 ASIA */
+.sheet-asia th {
+  background: linear-gradient(135deg, #ff6a00, #ffb347);
+  color: white;
+}
+
+/* 🇦🇺 AUSTRALIA */
+.sheet-australia th {
+  background: linear-gradient(135deg, #0088cc, #00c6ff);
+  color: white;
+}
+
+/* 🌎 AMERICA */
+.sheet-america th {
+  background: linear-gradient(135deg, #ff3c3c, #ff7b7b);
+  color: white;
+}
+
+/* Row Accent Colors */
+.sheet-asia tr:nth-child(even) td {
+  background: #fff4e6;
+}
+
+.sheet-australia tr:nth-child(even) td {
+  background: #e6f7ff;
+}
+
+.sheet-america tr:nth-child(even) td {
+  background: #ffeaea;
+}
+
+.sheet-all tr:nth-child(even) td {
+  background: #f4f4ff;
+}
+
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
