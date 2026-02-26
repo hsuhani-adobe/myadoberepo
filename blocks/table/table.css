@@ -1,62 +1,67 @@
-/* Countries Block Container */
-.countries-block {
-  width: 90%;
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 30px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.6s ease-in-out;
+/* Dropdown */
+.continent-dropdown {
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
 }
 
-/* Table Styling */
+
+/* Base Table */
 .countries-block table {
   width: 100%;
   border-collapse: collapse;
-  font-family: "Segoe UI", sans-serif;
-  overflow: hidden;
   border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* Header Styling */
 .countries-block th {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg,#4f46e5,#6366f1);
   color: white;
   padding: 14px;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
 }
 
-/* Row Styling */
 .countries-block td {
   padding: 14px;
-  text-align: center;
-  font-size: 15px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #eee;
 }
 
-/* Alternate Row Background */
-.countries-block tr:nth-child(even) {
-  background-color: #f9fafc;
+
+/* 🌏 Asia */
+tr.asia {
+  background: #fff7ed;
 }
 
-/* Hover Effect */
+/* 🌍 Europe */
+tr.europe {
+  background: #eef2ff;
+}
+
+/* 🌍 Africa */
+tr.africa {
+  background: #ecfdf5;
+}
+
+/* 🌎 America */
+tr.america {
+  background: #fef2f2;
+}
+
+/* 🌏 Australia */
+tr.australia {
+  background: #f0f9ff;
+}
+
+
+/* Hover */
 .countries-block tr:hover {
-  background-color: #eef2ff;
   transform: scale(1.01);
-  transition: 0.2s ease-in-out;
-}
-
-/* Smooth Fade Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  transition: 0.2s ease;
 }
