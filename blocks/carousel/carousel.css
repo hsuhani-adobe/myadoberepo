@@ -1,0 +1,10 @@
+.carousel-wrapper { position: relative; overflow: hidden; width: 100%; }
+.slides { display: flex; transition: transform 400ms ease; }
+.slide  { flex: 0 0 100%; box-sizing: border-box; }
+.slide-media img { width: 100%; height: auto; display: block; border-radius: 14px; }
+.slide-text { margin-top: 12px; }
+
+/* Buttons on both sides (same classes you used) */
+.btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; }
+.btn-prev { left: 12px; }
+.btn-next { right: 12px; }
